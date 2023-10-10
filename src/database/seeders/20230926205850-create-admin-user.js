@@ -15,7 +15,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-		const hashedPassword = await bcrypt.hash(process.env.ADMIN_PASSWORD, 10);  // Replace with the desired password
+		const hashedPassword = await bcrypt.hash(process.env.ADMIN_PASSWORD, 10);
 
 		return queryInterface.bulkInsert("Users", [{
 			firstName: "Daniel",
